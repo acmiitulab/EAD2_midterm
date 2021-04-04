@@ -17,3 +17,4 @@ public class Logout extends HttpServlet {
         req.getRequestDispatcher("Login.jsp").forward(req, resp);
     }
 }
+

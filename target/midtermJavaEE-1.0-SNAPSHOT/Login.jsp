@@ -18,9 +18,5 @@
     </form action="/login" method="post">
 
 
-
-
-
-
 </body>
 </html>

@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-    <a href="/login">Login</a>
+
     <br>
     <a href="/registration">Registration</a>
     <br>

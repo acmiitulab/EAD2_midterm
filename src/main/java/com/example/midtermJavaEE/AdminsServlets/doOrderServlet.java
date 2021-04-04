@@ -10,6 +10,7 @@ public class doOrderServlet extends HttpServlet {
 
     Pizzeria pizzeria = new Pizzeria();
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();

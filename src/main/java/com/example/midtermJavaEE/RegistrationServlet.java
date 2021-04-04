@@ -42,3 +42,4 @@ public class RegistrationServlet extends HttpServlet {
         req.getRequestDispatcher("Registration.jsp").forward(req, resp);
     }
 }
+

@@ -19,6 +19,7 @@ public class ResponseRegisterFilter implements Filter {
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain filterChain) throws IOException, ServletException {
 
 
+
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String confirmPassword = req.getParameter("confirmPassword");
