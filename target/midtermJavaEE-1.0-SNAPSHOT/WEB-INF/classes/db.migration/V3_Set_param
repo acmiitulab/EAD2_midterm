@@ -1,0 +1,19 @@
+ALTER TABLE `orders`
+    ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `orders`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+COMMIT;
+
+ALTER TABLE `pizzas`
+    ADD PRIMARY KEY (`name`);
+COMMIT;
+
+ALTER TABLE `tokens`
+    ADD PRIMARY KEY (`token`);
+COMMIT;
+
+ALTER TABLE `users`
+    ADD PRIMARY KEY (`username`);
+COMMIT;
