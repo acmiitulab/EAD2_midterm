@@ -26,11 +26,16 @@ public class chekOrder extends HttpServlet {
                ArrayList<Order> orders = pizzeria.getOrdersCollection().getOrdersByUsername(pizzeria.getUser().getUsername());
 
                if (orders.size() == 0) {
-                   resp.getWriter().println("You dont have any orders");
+                   resp.getWriter().println("<a href=\"/login\" style=\"font-size:30px;\">" + pizzeria.getUser().getUsername() +"</a>" +
+                           "<p style=\"text-align: center;\">&nbsp;</p>\n" +
+                           "\n" +
+                           "<p style=\"text-align: center;\">&nbsp;</p>\n" +
+                           "\n" +
+                           "<p style=\"text-align: center;\"><span style=\"font-size:28px;\"> You dont have any orders </span></p>");
                } else {
-                   String str = "Your order(s):";
+                   String str = "<a href=\"/login\" style=\"font-size:30px;\">" + pizzeria.getUser().getUsername() +"</a>" +  "<p style=\"text-align: center;\"><span style=\"font-size:28px;\">Your order(s):</span></p>";
                    for (Order i : orders) {
-                       str += i.getId() + " ";
+                       str +=  "<p style=\"text-align: center;\"><span style=\"font-size:28px;\">" + i.getId() + " ";
                        for ( String pizza : i.getPizzas()) {
                            str += pizza + " ";
                        }
@@ -38,8 +43,9 @@ public class chekOrder extends HttpServlet {
                        if (i.isDone()) {
                            str += "is done!";
                        }
-                       str += "\n";
+                       str += "</p>";
                    }
+
                    resp.getWriter().println(str);
                }
 

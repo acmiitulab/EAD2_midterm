@@ -18,6 +18,8 @@ public class RegistrationServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String confirmPassword = req.getParameter("confirmPassword");
+        if (username.equals("") || password.equals(""))
+            resp.getWriter().println("Please enter all fields");
 
         Pizzeria pizzeria = new Pizzeria();
         if (password.equals(confirmPassword)) {

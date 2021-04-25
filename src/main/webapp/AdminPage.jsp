@@ -7,14 +7,20 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <a href="/doOrder">Do order</a>
-    <br>
-    <a href="/createpizza">Create piza</a>
-    <br>
-    <a href="/logout">exit</a>
-    <br>
-</head>
+
+    <%@ include file="result.jsp"%>
+    <p style="text-align: center;"><span style="font-size:28px;"><a href="/doOrder">Do order</a></span></p>
+
+    <p style="text-align: center;"><br />
+        <span style="font-size:28px;"><a href="/createpizza">Create piza</a></span></p>
+
+    <p style="text-align: center;"><span style="font-size:28px;"><a href="/createpizza">​</a><br />
+    <a href="/logout">exit</a></span></p>
+
+    <p style="text-align: center;"><br />
+        <span style="font-size:28px;"> <a href="/review.jsp">reviews</a></span></p>
+
+
 <body>
 
 

@@ -11,16 +11,17 @@
     <title>Add Pizza</title>
 </head>
 <body>
-    <a href="/main">Create pizza</a>
+    <%@ include file="result.jsp"%>
     <br>
     <form action="/createpizza" method="post">
-    <input type="text" name="name" placeholder="Pizza name">
-    <br>
-    <input type="text" name="price" placeholder="price">
-    <br>
-    <input type="submit" value="Submit">
+        <p style="text-align: center;"><span style="font-size:28px;"><input name="name" placeholder="Pizza name" type="text" /></span></p>
 
-</form action="/createpizza" method="post">
+        <p style="text-align: center;"><br />
+            <span style="font-size:28px;"><input name="price" placeholder="price" type="text" /></span></p>
+
+        <p style="text-align: center;"><br />
+            <span style="font-size:28px;"><input type="submit" value="Submit" />&nbsp;</span></p>
+    </form>
 
 
 

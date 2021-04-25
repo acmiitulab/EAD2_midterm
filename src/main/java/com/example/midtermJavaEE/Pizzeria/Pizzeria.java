@@ -4,6 +4,8 @@ import com.example.midtermJavaEE.Pizzeria.Collections.OrdersCollection;
 import com.example.midtermJavaEE.Pizzeria.Collections.PizzasCollection;
 import com.example.midtermJavaEE.Pizzeria.Collections.Token;
 import com.example.midtermJavaEE.Pizzeria.Collections.UsersCollection;
+import com.example.midtermJavaEE.Pizzeria.Collections.Messages;
+import com.example.midtermJavaEE.Pizzeria.Models.Message;
 import com.example.midtermJavaEE.Pizzeria.Models.Order;
 import com.example.midtermJavaEE.Pizzeria.Models.Pizza;
 import com.example.midtermJavaEE.Pizzeria.Models.User;
@@ -15,10 +17,12 @@ public class Pizzeria {
     private OrdersCollection ordersCollection;
     private PizzasCollection pizzasCollection;
     private UsersCollection usersCollection;
+    private Messages messages;
     private Token token;
     private User user;
 
     public Pizzeria() {
+        this.messages = new Messages();
         this.ordersCollection = new OrdersCollection();
         this.pizzasCollection = new PizzasCollection();
         this.usersCollection = new UsersCollection();
@@ -83,6 +87,14 @@ public class Pizzeria {
             }
         }
         return "No orders!";
+    }
+
+    public void writeMessage (String text) {
+        if (user != null) messages.insert(new Message(0, text, user.getUsername()));
+    }
+
+    public ArrayList<Message> getMessages () {
+        return messages.getMessages();
     }
 
     public User getUser() {

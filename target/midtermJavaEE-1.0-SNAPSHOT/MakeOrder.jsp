@@ -14,20 +14,27 @@
     <title>Make Order</title>
 </head>
 <body>
-    <h1>Welcome to our pizzeria</h1>
+<%@ include file="result.jsp"%>
+<p style="text-align: center;"><strong><span style="font-size:34px;">Welcome to our pizzeria</span></strong></p>
+<br>
     <form  action="/makeorder" method="post">
-        <p><b>Choose pizzas which you want buy </b></p>
+
+        <p style="text-align: center;"><strong><span style="font-size:28px;">Choose pizzas which you want buy</span></strong></p>
+        <br>
+
         <%
             PizzasCollection pizzasCollection = new PizzasCollection();
             ArrayList<Pizza> menu = pizzasCollection.getPizzas();
 
             String pr = "";
             for (Pizza i : menu) {
-                pr += "<input type=\"checkbox\" name=\"answer\" value=\"" + i.getName() +  " \">" + i.getName() + " price: " + i.getPrice() + "<Br>\n";
+                pr += "<p style=\"text-align: center;\"><input type=\"checkbox\" name=\"answer\" value=\"" + i.getName() +  " \" ><span style=\"font-size:26px;\">" + i.getName() + " price: " + i.getPrice() + "</span></p><Br>\n";
             }
-            out.print(pr);
+            out.println(pr);
         %>
-        <input type="submit" value="Submit">
+        <p style="text-align: center;"><span style="font-size:26px;">​</span><br />
+            <input type="submit" value="Submit" /></p>
+
     </form>
 
 </body>

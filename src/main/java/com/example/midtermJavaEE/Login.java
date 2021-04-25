@@ -11,6 +11,7 @@ public class Login extends HttpServlet {
 
     Pizzeria pizzeria = new Pizzeria();
     @Override
+
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
@@ -46,6 +47,6 @@ public class Login extends HttpServlet {
                     req.getRequestDispatcher("UserPage.jsp").forward(req, resp);
             }
         } else
-             req.getRequestDispatcher("Login.jsp").forward(req, resp);
+            req.getRequestDispatcher("Login.jsp").forward(req, resp);
     }
 }

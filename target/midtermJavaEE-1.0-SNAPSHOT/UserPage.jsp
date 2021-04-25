@@ -13,15 +13,19 @@
     <title>Pizzeria</title>
 </head>
 <body>
-    <h1>Welcome to our pizzeria</h1>
-    <head>
-        <a href="/checkorder">Chek your orders</a>
-        <br>
-        <a href="/makeorder">Make order</a>
-        <br>
-        <a href="/logout">exit</a>
-        <br>
-    </head>
+    <br>
+    <h1 style="text-align: center;"><span style="font-size:48px;">Welcome to our pizzeria</span></h1>
+
+    <p style="text-align: center;"><span style="font-size:28px;"><a href="/checkorder">Chek your orders</a></span></p>
+
+    <p style="text-align: center;"><br />
+        <span style="font-size:28px;"><a href="/makeorder">Make order</a></span></p>
+
+    <p style="text-align: center;"><br />
+        <span style="font-size:28px;"><a href="/logout">exit</a></span></p>
+
+    <p style="text-align: center;"><br />
+        <span style="font-size:28px;"> <a href="/review.jsp">reviews</a></span></p>
 
 </body>
 </html>

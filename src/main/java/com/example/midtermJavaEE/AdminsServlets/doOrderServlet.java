@@ -21,10 +21,18 @@ public class doOrderServlet extends HttpServlet {
         if (pizzeria.getUser() != null) {
             String anw = pizzeria.doOrder();
 
-            resp.getWriter().println(anw);
+            resp.getWriter().println("<a href=\"/login\" style=\"font-size:30px;\">" + pizzeria.getUser().getUsername() +"</a>" + "<p style=\"text-align: center;\">&nbsp;</p>\n" +
+                    "\n" +
+                    "<p style=\"text-align: center;\">&nbsp;</p>\n" +
+                    "\n" +
+                    "<p style=\"text-align: center;\"><span style=\"font-size:28px;\">" + anw + "</span></p>");
 
         } else {
-            resp.getWriter().println("You are not logginned" + tok);
+            resp.getWriter().println("<a href=\"/login\" style=\"font-size:30px;\">" + pizzeria.getUser().getUsername() +"</a>" + "<p style=\"text-align: center;\">&nbsp;</p>\n" +
+                    "\n" +
+                    "<p style=\"text-align: center;\">&nbsp;</p>\n" +
+                    "\n" +
+                    "<p style=\"text-align: center;\"><span style=\"font-size:28px;\"> You are not logginned </span></p>");
         }
     }
 }
