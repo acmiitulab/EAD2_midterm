@@ -10,6 +10,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <style>
+        a {
+            border: 1px black solid;
+            padding-left: 10px;
+            padding-right:  10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+            background-color: black;
+            text-decoration-line: none;
+            font-weight: bold;
+        }
+    </style>
     <title>Pizzeria</title>
 </head>
 <body>

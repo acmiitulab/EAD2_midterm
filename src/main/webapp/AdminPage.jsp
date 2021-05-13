@@ -12,10 +12,10 @@
     <p style="text-align: center;"><span style="font-size:28px;"><a href="/doOrder">Do order</a></span></p>
 
     <p style="text-align: center;"><br />
-        <span style="font-size:28px;"><a href="/createpizza">Create piza</a></span></p>
+        <span style="font-size:28px;"><a href="/createpizza">Create pizza</a></span></p>
+    <br>
 
-    <p style="text-align: center;"><span style="font-size:28px;"><a href="/createpizza">​</a><br />
-    <a href="/logout">exit</a></span></p>
+    <p style="text-align: center;"><span style="font-size:28px;"><a href="/logout">exit</a></span></p>
 
     <p style="text-align: center;"><br />
         <span style="font-size:28px;"> <a href="/review.jsp">reviews</a></span></p>

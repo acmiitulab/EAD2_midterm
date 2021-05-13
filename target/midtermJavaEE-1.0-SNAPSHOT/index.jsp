@@ -9,7 +9,9 @@
     <br>
     <a href="/registration" style="font-size:30px;">Registration</a>
     <br>
-    <a href="/review.jsp" style="font-size:30px;">reviews</a>
+    <br>
+    <br>
+    <a href="/review.jsp" style="font-size:30px;">Reviews</a>
     <br>
 </body>
 </html>

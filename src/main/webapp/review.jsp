@@ -24,6 +24,7 @@
         margin: 10px;
         font-size: 14px;
     }
+
 </style>
 <%@ include file="result.jsp"%>
 
@@ -49,7 +50,7 @@
 <div class="input">
     <form action="/review" method="post">
 
-        <input name="message" placeholder="message" type="text"  height=10px class="messagearea" size="222" />
+        <input name="message" placeholder="message" type="text"  height=10px class="messagearea" size="162" />
         <input type="submit" value="Submit"   />
 
     </form>
