@@ -41,9 +41,10 @@
             <version>8.0.23</version>
         </dependency>
 
+
         <dependency>
             <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
+            <artifactId>flyway-maven-plugin</artifactId>
             <version>7.7.3</version>
         </dependency>
 
@@ -57,18 +58,18 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.0</version>
             </plugin>
+            <!-- Flyway -->
+
 
             <plugin>
-                <groupId>org.flywaydb</groupId>                      // подключили плагин
-                <artifactId>flyway-core</artifactId>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
                 <version>7.7.3</version>
                 <configuration>
-                    <user>root</user>                                   // пользователь
-                    <password></password>                     // пароль базы
-                    <url>127.0.0.1</url>                                    // адрес базы
-                    <baseDir>/resources/db.migration</baseDir>            // путь к скриптам - отмечу отдельно, так как по дефолту путь довольно замысловат, скрипты должны лежать в main/src/db/migrate , но это не всегда удобно
+                    <user>root</user>
+                    <password></password>
+                    <url>jdbc:mysql://localhost:3306/migratetest</url>
                 </configuration>
-
             </plugin>
 
 
